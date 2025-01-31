@@ -17,3 +17,12 @@ discount_factor=0.95
 epsilon=1.0
 min_epsilon=0.01
 epsilon_decay=0.995
+
+reward=list()
+
+for episode in range(num_episodes):
+    state=env.reset()[0]
+    total_reward=0
+    done=False
+
+    
